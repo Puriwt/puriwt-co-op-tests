@@ -49,8 +49,8 @@
 
             & > .body-aside {
                 width: 100%;
-                height: 81%;
-                margin-top: 2rem;
+                height: 77%;
+                margin-top: 4rem;
                 background: #7bd97b;
 
             }
@@ -126,8 +126,8 @@
 
             & > .content {
                 width: 100%;
-                height: 91%;
-                margin-top: 2rem;
+                height: 87%;
+                margin-top: 4rem;
                 background: #7bd97b;
 
                 & > .dashboard-section {
@@ -171,7 +171,7 @@
                     align-items: center;
                     font-size: 20px;
                     font-weight: 600;
-                    padding: 0 0 1rem 0;
+                    padding: 0 0 2rem 0;
                 }
             }
             
