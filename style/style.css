@@ -135,8 +135,8 @@
                 background: #7bd97b;
 
                 .icon-box{
-                    width: 30px;
-                    height: 30px;
+                    width: 40px;
+                    height: 40px;
                     border-radius: 7px;
                     background-color: #4d7eb7;
                     display: flex;
@@ -152,6 +152,11 @@
                     font-size: 1.5rem;
                     font-weight: 600;
                     padding: 0 0 2rem 0;
+
+                    & img{
+                        width: 33px;
+                        height: 33px;
+                    }
                 }
 
                 & > .dashboard-section {
