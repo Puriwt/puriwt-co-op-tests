@@ -52,7 +52,7 @@
 
             & > .body-aside {
                 width: 100%;
-                height: 77%;
+                height: 67%;
                 margin-top: 4rem;
                 background: #7bd97b;
 
@@ -63,14 +63,30 @@
                 margin: 0;
 
                 & > li {
+                    padding: 0.3rem 0;
                     & > a {
                         text-decoration: none;
                         color: #000000;
                         padding: 10px;
-                        display: block;
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.2rem;
+                        
+                        
 
-                        & > .select{
-                            color: #729ccc;
+                        img{
+                            width: 28px;
+                            height: 28px;
+                            margin-right: 1rem;
+                            transition: fill 0.3s ease;
+                        }
+                        
+                    }
+                    a:hover {
+                        color: #007bff; 
+
+                        img{
+                            fill: #007bff;
                         }
                     }
     
@@ -81,7 +97,7 @@
             & > .footer-aside {
                 width: 100%;
                 flex: flex-end;
-                height: 10%;
+                height: 20%;
                 background: #47b947;
             }
         } 
