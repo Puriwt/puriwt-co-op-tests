@@ -87,6 +87,36 @@
                 width: 100%;
                 height: 5%;
                 background: #d97b7b;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+
+                & > .menu-icon {
+                    font-size: 24px;
+                    cursor: pointer;
+                }
+
+                & > .search-input {
+                    flex-grow: 1;
+                    border: 1px solid #ddd;
+                    outline: none;
+                    font-size: 12px;
+                    padding: 10px;
+                    border-radius: 20px;
+                    margin: 0 15px;
+                }
+
+                .search-input::placeholder {
+                    color: #aaa;
+                }
+                & > .profile-pic {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    background-position: center;
+                    background-image: url('../images/photos/profile.jpeg')
+                }
             }
 
             & > .content {
