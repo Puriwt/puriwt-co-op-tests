@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -9,7 +10,7 @@
         flex-direction: row;
         height: 100vh;
         margin: 0;
-        box-sizing: content-box;
+        box-sizing: border-box;
 
         & > aside {
             padding: 1rem 2rem;
@@ -17,21 +18,62 @@
             background: #d97b7b;
 
             & > .head-aside {
+                display: flex;
+                align-items: center;
                 width: 100%;
                 height: 5%;
                 background: #d7d97b;
+
+                & > .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: #4A5568;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 10px;
+                }
+
+                & > .name {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
 
             & > .body-aside {
                 width: 100%;
-                height: 75%;
+                height: 85%;
+                margin-top: 20px;
                 background: #7bd97b;
+
+            }
+            .menu {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                & > li {
+                    & > a {
+                        text-decoration: none;
+                        color: #000000;
+                        padding: 10px;
+                        display: block;
+
+                        & > .select{
+                            color: #729ccc;
+                        }
+                    }
+    
+                }
+                    
             }
 
             & > .footer-aside {
                 width: 100%;
                 flex: flex-end;
-                height: 20%;
+                height: 10%;
                 background: #47b947;
             }
         } 
