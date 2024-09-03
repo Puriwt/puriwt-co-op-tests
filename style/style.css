@@ -7,5 +7,58 @@
     .main-container{
         display: flex;
         flex-direction: row;
+        height: 100vh;
+        margin: 0;
+        box-sizing: content-box;
+
+        & > aside {
+            padding: 1rem 2rem;
+            width: 30%;
+            background: #d97b7b;
+
+            & > .head-aside {
+                width: 100%;
+                height: 5%;
+                background: #d7d97b;
+            }
+
+            & > .body-aside {
+                width: 100%;
+                height: 75%;
+                background: #7bd97b;
+            }
+
+            & > .footer-aside {
+                width: 100%;
+                flex: flex-end;
+                height: 20%;
+                background: #47b947;
+            }
+        } 
+
+        & > .content-body {
+            padding: 1rem 2rem;
+            width: 70%;
+            background: #7b7bd9;
+
+            & > .search-bar {
+                width: 100%;
+                height: 5%;
+                background: #d97b7b;
+            }
+
+            & > .content {
+                width: 100%;
+                height: 95%;
+                background: #7bd97b;
+
+                & > .dashboard-section {
+                    width: 100%;
+                    height: 20rem;
+                    background: #47b5b9;
+                }
+            }
+        }
     }
+    
 }
