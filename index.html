@@ -9,10 +9,11 @@
 </head>
 <body>
     <section class="main-container">
-        <aside>
+        <aside id="sidebar">
             <section class="head-aside">
                 <div class="avatar">CL</div>
                 <div class="name">Codinglab</div>
+                <i onclick="closeNav()" class="fa-solid fa-xmark"></i>
             </section>
             <section class="body-aside">
                 <ul class="menu">
@@ -33,7 +34,7 @@
         </aside>
         <section class="content-body">
             <section class="search-bar">
-                <div class=""><a href="#"><img src="./images/icons/menu.svg" alt="Menu"></a></div>
+                <div class=""><a onclick="openNav()" class="btn-menu" href="#"><i class="fa-solid fa-bars"></i></a></div>
                 <input type="text" class="search-input" placeholder="Search here...">
                 <div class="profile-pic"></div>
             </section>
@@ -117,5 +118,15 @@
         </section>
     </section>
     
+    <script>
+    function openNav() {
+        document.getElementById("sidebar").style.left = "0px";
+        }
+
+    function closeNav() {
+        document.getElementById("sidebar").style.left = "-330px";
+    }
+
+        </script>
 </body>
 </html>
