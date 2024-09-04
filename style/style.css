@@ -241,6 +241,7 @@
                         width: 100%;
                         overflow-x: auto;
                         font-size: 1.3rem;
+                        white-space: nowrap;
 
                         th {
                             padding-top: 12px;
@@ -315,6 +316,23 @@
     
                         }
                          
+                    }
+                    & > .recent-activity-section{
+                        & > .table{
+                            width: 100%;
+                            overflow-x: auto;
+                            font-size: 1.2rem;
+                            white-space: nowrap;
+    
+                            th {
+                                padding: 1rem 0;
+                                text-align: left;
+                            }
+    
+                            th, td{
+                                padding:0.5rem 2rem;
+                            }
+                        }
                     }
                 }
             }
